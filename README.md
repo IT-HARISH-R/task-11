@@ -25,11 +25,7 @@ The API is hosted on [Render](https://task-11-vf7k.onrender.com).
 3. To fetch the logged-in user's details, send a GET request to /auth/user with the Authorization header set to Bearer <JWT_TOKEN>.
 
 
-## Table of Contents
-- [Task-11 API](#task-11-api)
-  - [Testing](#testing)
-  - [Table of Contents](#table-of-contents)
-  - [Technologies Used](#technologies-used)
+
 
 ## Technologies Used
 - **Node.js**: JavaScript runtime environment.
@@ -91,3 +87,5 @@ The API is hosted on [Render](https://task-11-vf7k.onrender.com).
   "role": "user"
 }
 ```
+
+![alt text](image.png)
