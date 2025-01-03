@@ -3,8 +3,6 @@ const { SECRET_KEY } = require("../utlis/config")
 
 const auth = {
     verifyUser: async (request, response, next) => {
-
-        console.log(SECRET_KEY);
         const token = request.headers.authorization.substring(7)
 
         if (!token) {
@@ -12,7 +10,7 @@ const auth = {
         }
 
         try {
-            const verfied = jwt.verify(token,SECRET_KEY);
+            const verfied = jwt.verify(token, SECRET_KEY);
             request.userid = verfied.id;
         }
         catch {

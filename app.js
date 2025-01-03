@@ -5,12 +5,9 @@ const errorPage = require("./utlis/errorPage");
 
 const app = express();
 
-app.use(express.json())
-
+app.use(express.json());
 app.use(logger)
+app.use("/auth", authRouter);
 
-app.use("/auth", authRouter)
-
-
-app.use(errorPage)
+app.use(errorPage);
 module.exports = app;
